@@ -1,0 +1,13 @@
+enabled: true
+xp-per-level: 100
+gui:
+  title: "&aYour Level Info"
+  items:
+    level:
+      name: "&eLevel: &f%level%"
+      lore:
+        - "&7Current Level: &f%level%"
+    xp:
+      name: "&aXP: &f%xp% / %nextxp%"
+      lore:
+        - "&7XP to next level: &f%remaining%"

@@ -1,0 +1,10 @@
+pvp_areas:
+  - name: "arena1"
+    world: "world"
+    points:
+      - x: 100
+        y: 64
+        z: 100
+      - x: 150
+        y: 80
+        z: 150

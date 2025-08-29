@@ -1,0 +1,146 @@
+items:
+  game_menu:
+    slot: 0
+    material: COMPASS
+    data: 0
+    name: "&aGame Menu"
+    lore:
+      - "&7Click to open the Game Menu."
+      - "&7Explore all the available game modes."
+      - "&7Select PvP, MiniGames, and more!"
+      - "&7Customize your settings and profile."
+      - "&7Enjoy your game time!"
+
+  lobby_selector:
+    slot: 8
+    material: NETHER_STAR
+    data: 0
+    name: "&bLobby Selector"
+    lore:
+      - "&7Click to select a lobby."
+      - "&7Choose the best lobby for your playstyle."
+      - "&7Switch between different game lobbies."
+      - "&7Easily find your friends in lobbies."
+      - "&7Click to navigate to the main lobby."
+
+  profile:
+    slot: 1
+    material: SKULL_ITEM
+    data: 3
+    name: "&dProfile"
+    lore:
+      - "&7Click to view your profile. (player)"
+      - "&7Check your player stats and achievements."
+      - "&7See your progress and current rank."
+      - "&7Edit your personal settings and preferences."
+      - "&7Manage your account details."
+
+menus:
+  game_menu:
+    title: "&bGame Menu"
+    size: 45
+    items:
+      buy:
+        slot: 6
+        material: BARRIER
+        data: 0
+        name: "&6"
+        command: ""
+        lore:
+          - "&7"
+
+  lobby_selector:
+    title: "&bLobby Selector"
+    size: 45
+    items:
+      main_lobby:
+        slot: 8
+        material: BEACON
+        data: 0
+        name: "&eMain Lobby"
+        command: "lobby"
+        lore:
+          - "&7Click to return to the main lobby."
+          - "&7Relax and explore the lobby."
+          - "&7Choose your next adventure."
+          - "&7Chat with other players in the lobby."
+          - "&7Take a break and customize your settings."
+
+  profile:
+    title: "&bYour Profile"
+    size: 45
+    items:
+      stats:
+        slot: 11
+        material: SKULL_ITEM
+        data: 3
+        name: "(prefix)  (player)"
+        command: "level"
+        lore:
+          - "&7HurrayaMC Level: &b(level)"
+          - "&7Achievements Points: &b(achievementlevel)"
+          - "&7Guild: (guild_prefix)"
+
+      rankcolor:
+        slot: 33
+        material: INK_SACK
+        data: 1
+        name: "&bRankColor"
+        command: "rankcolor"
+        lore:
+          - "&7Players can change their rank or rank color."
+          - "&7Get the lowest rank to activate"
+          - "&7Minimum &aVIP &7Rank"
+          - ""
+          - "&eClick to change!"
+
+      settings:
+        slot: 13
+        material: REDSTONE_COMPARATOR
+        data: 0
+        name: "&cSettings"
+        command: "achievements"
+        lore:
+          - "&7Click to adjust your settings."
+          - "&7Customize game preferences."
+          - "&7Adjust sound, graphics, and gameplay."
+          - "&7Set your keybindings and controls."
+          - "&7Save your settings for a better experience."
+
+      coins:
+        slot: 15
+        material: EMERALD
+        data: 0
+        name: "&aCoins"
+        command: "coinsgui"
+        lore:
+          - "&7Click to view your coin balance."
+          - "&7See your transaction history."
+          - "&7Manage your coins easily."
+
+      buy:
+        slot: 29
+        material: DIAMOND
+        data: 0
+        name: "&6Buy"
+        command: "buy"
+        lore:
+          - "&7Click to open the Shop."
+          - "&7Purchase exclusive ranks and items."
+          - "&7Upgrade your account for special perks."
+          - "&7Spend your coins wisely."
+          - "&7coins &615,000 &7=  &20,99$&7."
+
+      luckygame:
+        slot: 31
+        material: TRIPWIRE_HOOK
+        data: 0
+        name: "&eLucky Game"
+        command: "luckygame"
+        lore:
+          - "&7Click to try your luck."
+          - "&7Spin for rare rewards and prizes."
+          - "&7Get coins, items, or special boosts."
+          - "&7Daily spins available for everyone."
+          - "&7Test your fortune now!"
+ 

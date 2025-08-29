@@ -1,0 +1,227 @@
+name: system64
+version: 1.0.1
+main: com.omar.system64.Main
+depend: [HolographicDisplays, PlaceholderAPI]
+
+commands:
+  luckygame:
+    description: Play the Lucky Game by betting coins
+    usage: /luckygame <amount>
+
+  setspawn:
+    description: Set the spawn location
+    usage: /setspawn <world> <x> <y> <z> <yaw> <pitch>
+    permission: system64.setspawn
+    permission-message: "You do not have permission to set the spawn location."
+
+  buy:
+    description: Buy an item with coins
+    usage: /buy <item>
+
+  hologram:
+    description: Command to create or remove top-level hologram
+    usage: /<command> <set|remove>
+
+  build:
+    description: Enable or disable building
+    usage: /build <on|off>
+    permission: system64.build
+    permission-message: "You do not have permission to toggle building."
+
+  pvp:
+    description: Enable or disable PvP
+    usage: /pvp <on|off>
+    permission: system64.pvp
+    permission-message: "You do not have permission to toggle PvP."
+
+  setpermission:
+    description: Set a permission to a player
+    usage: /setPermission <player> <permission>
+    permission: system64.setpermission
+    permission-message: "You do not have permission to use this command."
+
+  addpermission:
+    description: Add a permission to a player and save it in MySQL
+    usage: /addPermission <player> <permission>
+    permission: system64.setpermission
+    permission-message: "You do not have permission to use this command."
+
+  removepermission:
+    description: Remove a permission from a player and remove it from MySQL
+    usage: /removePermission <player> <permission>
+    permission: system64.setpermission
+    permission-message: "You do not have permission to use this command."
+
+  setlobby:
+    description: Set the lobby location
+    usage: /setlobby <world> <x> <y> <z> <yaw> <pitch>
+    permission: system64.setlobby
+    permission-message: "You do not have permission to set the lobby location."
+
+  lobby:
+    description: Teleport to the lobby
+    usage: /lobby
+    permission: system64.lobby
+    permission-message: "You do not have permission to teleport to the lobby."
+
+  setrank:
+    description: Assign a rank to a player
+    usage: /setrank <player> <rank>
+    permission: system64.setrank
+    permission-message: "You do not have permission to execute this command."
+
+  fly:
+    description: Toggle fly mode
+    usage: /fly
+    permission: autofly
+    permission-message: "You do not have permission to toggle fly mode."
+
+  fly1:
+    description: Toggle flight mode
+    usage: /fly [player]
+
+  guild:
+    description: Create and manage guilds
+    usage: /guild <create|info|invite|leave>
+    permission: system64.guild
+    permission-message: "You do not have permission to manage guilds."
+
+  setgg:
+    description: Set a lightning strike location
+    usage: /setgg
+
+  g:
+    description: Shortcut for the guild command
+    usage: /g <create|info|invite|leave>
+    permission: system64.guild
+    permission-message: "You do not have permission to manage guilds."
+
+  rankcolor:
+    description: Open rank color selection GUI
+    usage: /rankcolor
+
+  setlevel:
+    description: Set player level
+    usage: /setlevel <player> <level>
+
+  addlevel:
+    description: Add level to player
+    usage: /addlevel <player> <amount>
+
+  coins:
+    description: Manage player coins
+    usage: /coins <add|remove|set> <player> <amount>
+    permission: coins.admin
+
+  coinsgui:
+    description: Open the Coins GUI
+    usage: /coinsgui
+    permission: coinsgui.use
+
+  achievements:
+    description: Open the achievements GUI
+
+  setxp:
+    description: Set player XP
+    usage: /setxp <player> <xp>
+
+  sethead:
+    description: Spawn a custom animated head
+    usage: /sethead
+
+  pholoset:
+    description: Set hologram location to your current position
+    usage: /pholoset
+    permission: system64.pholoset
+    permission-message: "You don't have permission to use this command."
+
+  setgift:
+    description: Give gift wand and set gift trigger by right-clicking a block
+    usage: /setgift [radius] | /setgift cancel
+    permission: system64.addgift
+
+  ach:
+    description: Achievement commands
+    usage: /ach addlevel <player> <level>
+    permission: system64.achievements
+
+  addxp:
+    description: Add XP to player
+    usage: /addxp <player> <amount>
+
+  setworld:
+    description: Set the world boundaries using a stick
+    usage: /setworld
+
+  effect:
+    description: تطبيق تأثير حول اللاعب
+    usage: /effect <اسم_التأثير>
+
+  level:
+    description: Show your level info (GUI) or use subcommands
+    usage: /level or /level list
+
+  setpvp:
+    description: Gives the stick to set PVP area
+    usage: /setpvp
+
+permissions:
+  system64.setspawn:
+    description: Grants permission to set the spawn location
+    default: op
+
+  system64.setlobby:
+    description: Grants permission to set the lobby location
+    default: op
+
+  system64.lobby:
+    description: Grants permission to teleport to the lobby
+    default: true
+
+  gadgetsmenu.use:
+    description: Allows the player to open the Gadgets Menu
+    default: true
+
+  system64.setrank:
+    description: Grants permission to assign ranks to players
+    default: op
+
+  system64.setpermission:
+    description: Grants permission to use setpermission commands
+    default: op
+
+  autofly:
+    description: Grants permission to toggle fly mode
+    default: false
+
+  system64.guild:
+    description: Grants permission to manage guilds
+    default: op
+
+  system64.achievements:
+    description: Allows access to achievement-related commands
+    default: op
+
+  system64.addgift:
+    description: Grants permission to add gift
+    default: op
+
+  coinsgui.use:
+    description: Allows the player to open the coins GUI
+    default: true
+
+  coins.admin:
+    description: Allows admin control of coins
+    default: op
+
+  system64.build:
+    description: Grants permission to toggle building
+    default: op
+
+  system64.pvp:
+    description: Grants permission to toggle PvP
+    default: op
+
+  system64.pholoset:
+    description: Allows player to set hologram location
+    default: op
